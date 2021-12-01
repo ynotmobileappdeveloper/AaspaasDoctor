@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ynot.aaspaasdoctor">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity
+            android:name=".OldCheckupList"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DocMedicineDetail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LabDetailPage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UploadMedicine"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".MedicineType"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditConsultation"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".ViewCunsultation"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".Booking2"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".OTP"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".ForgotPassword"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".PatientDetailsEdit"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity android:name=".RecentBooking" />
+        <activity
+            android:name=".AppointmentBooking"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PdfActivity" />
+        <activity
+            android:name=".LabTests"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Medicines"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PriscriptionAndLab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ynot.NextCheckup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ynot.Surgeryrecord"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ynot.MedicineRecord"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ynot.LabRecord"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ynot.OldCheckupRec"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MedicalRecord"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TimeSetting"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".OPTimeSetting"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".Consultation"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".Profile"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".History"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".PatientDetails"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".Booking"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".OPTime"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".BookingDetails"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar.home" />
+        <activity
+            android:name=".Registration"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.ynot.aaspaasdoctor.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

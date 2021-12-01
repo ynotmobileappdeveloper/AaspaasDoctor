@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.9"
+            android:background="@drawable/day_border"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:text="Monday"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/open"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.3"
+            android:background="@drawable/time_border"
+            android:drawableLeft="@drawable/ic_time"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="09:30 AM"
+            android:textAllCaps="true"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:background="@drawable/time_border"
+            android:drawableLeft="@drawable/ic_time"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="05:30 PM"
+            android:textAllCaps="true"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:padding="3dp"
+            android:src="@drawable/ic_no_entry" />
+
+    </LinearLayout>
+
+</RelativeLayout>
